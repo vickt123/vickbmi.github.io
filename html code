@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Virtual BMI Calculator Assistant</h1>
+        <p>Body mass index (BMI) is a calculation that estimates body fat based on a person's weight and height. It is a good gauge of your risk for diseases that can occur with more body fat.</p>
+        <label for="firstName">Please enter your first name:</label>
+        <input type="text" id="firstName" placeholder="Your first name">
+        <label for="height">Select your preferred measurement system:</label>
+        <select id="unitType">
+            <option value="metric">Metric System (Meters, Kilograms)</option>
+            <option value="imperial">Imperial System (Inches, Pounds)</option>
+        </select>
+        <div id="inputFields">
+            <label for="heightInput">Height:</label>
+            <input type="number" id="heightInput" placeholder="Enter your height">
+            <label for="weightInput">Weight:</label>
+            <input type="number" id="weightInput" placeholder="Enter your weight">
+            <button onclick="calculateBMI()">Calculate BMI</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
